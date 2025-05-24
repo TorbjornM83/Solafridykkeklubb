@@ -2,22 +2,71 @@
 import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="Solafridykkeklubb">
-  <section style="text-align: center; padding: 2rem;">
-    <h1>Velkommen til Solafridykkeklubb</h1>
-    <p>Fridykking og undervannsjakt ved vakre Solastranda!</p>
-  </section>
+<Layout title="Sola Fridykkerklubb">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('/bakgrunn-hav.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: sans-serif;
+    }
 
-  <section style="background: #ffffff11; border-radius: 12px; padding: 2rem; max-width: 600px; margin: auto;">
-    <h2>Om Klubben</h2>
-    <p>Solafridykkeklubb er en inkluderende klubb for alle som elsker havet, fridykking og undervannsjakt. Vi holder til på Solastranda og arrangerer jevnlige turer, trening og kurs.</p>
-  </section>
+    .logo {
+      width: 100px;
+      margin: 1rem;
+    }
 
-  <section id="kontakt" style="background: #ffffff22; border-radius: 12px; padding: 2rem; max-width: 600px; margin: 2rem auto;">
-    <h2>Kontakt oss</h2>
-    <p><strong>Solafridykkeklubb</strong></p>
-    <p>Adresse: Solastranda</p>
-    <p>Postnummer: 4050 Sola</p>
-    <p>E-post: <a href="mailto:kontakt@solafridykkeklubb.no">kontakt@solafridykkeklubb.no</a></p>
-  </section>
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    main {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      max-width: 800px;
+      margin: auto;
+      border-radius: 12px;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    a {
+      color: #00ffff;
+    }
+  </style>
+
+  <header>
+    <img src="/sola-fridykkerklubb-logo.png" alt="Sola Fridykkerklubb logo" class="logo" />
+    <nav>
+      <a href="#om">Om Klubben</a> | <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="velkommen">
+      <h1>Velkommen til Sola Fridykkerklubb</h1>
+      <p>Fridykking og undervannsjakt langs vakre Rogalandskysten!</p>
+    </section>
+
+    <section id="om">
+      <h2>Om Klubben</h2>
+      <p>Sola Fridykkerklubb er en inkluderende klubb for alle som elsker havet, fridykking og undervannsjakt. Vi holder til i Sola, men dykker langs hele Rogalandskysten – fra skjærgård til fjord.</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt oss</h2>
+      <p><strong>Sola Fridykkerklubb</strong></p>
+      <p>Adresse: Solastranda</p>
+      <p>Postnummer: 4050 Sola</p>
+      <p>E-post: <a href="mailto:kontakt@solafridykkeklubb.no">kontakt@solafridykkeklubb.no</a></p>
+    </section>
+  </main>
 </Layout>
