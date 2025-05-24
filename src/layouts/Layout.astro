@@ -1,1 +1,21 @@
-<link rel="stylesheet" href="/styles/global.css">
+---
+const { title } = Astro.props;
+---
+
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title || 'Sola Fridykkerklubb'}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/global.css">
+  </head>
+  <body>
+    <header>
+      <img src="/solafridykk-logo.png" alt="Sola Fridykkerklubb logo" style="height: 60px; margin: 1rem auto; display: block;" />
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+  </body>
+</html>
