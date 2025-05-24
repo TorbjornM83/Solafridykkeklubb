@@ -1,21 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
+import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="Solafridykkeklubb">
+  <section style="text-align: center; padding: 2rem;">
+    <h1>Velkommen til Solafridykkeklubb</h1>
+    <p>Fridykking og undervannsjakt ved vakre Solastranda!</p>
+  </section>
+
+  <section style="background: #ffffff11; border-radius: 12px; padding: 2rem; max-width: 600px; margin: auto;">
+    <h2>Om Klubben</h2>
+    <p>Solafridykkeklubb er en inkluderende klubb for alle som elsker havet, fridykking og undervannsjakt. Vi holder til på Solastranda og arrangerer jevnlige turer, trening og kurs.</p>
+  </section>
+
+  <section id="kontakt" style="background: #ffffff22; border-radius: 12px; padding: 2rem; max-width: 600px; margin: 2rem auto;">
+    <h2>Kontakt oss</h2>
+    <p><strong>Solafridykkeklubb</strong></p>
+    <p>Adresse: Solastranda</p>
+    <p>Postnummer: 4050 Sola</p>
+    <p>E-post: <a href="mailto:kontakt@solafridykkeklubb.no">kontakt@solafridykkeklubb.no</a></p>
+  </section>
 </Layout>
